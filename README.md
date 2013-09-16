@@ -27,8 +27,8 @@ Dimension fields are "smart" fields allowing the user to input in feet, inches, 
 To provide maximum flexibility, output can be copied to the clipboard so that you can paste it into a document, email, text message, etc. in order to record you field work.
 
 
-Search Features
-===============
+Search
+======
 Search criteria include the flange width, flange thickness, web thickness, section depth, and the approximate year of construction.
 
 All search criteria have tolerances that can be set by the user.
@@ -38,8 +38,8 @@ Database includes current and historic I shapes back to 1873 for US rolling mill
 The search criteria and selected shape information can be copied to the clipboard with a single button.
 
 
-Column Analysis Features
-========================
+Column Analysis
+===============
 Column capacities can be provided using either the ASD or LRFD method of ANSI / AISC 360-10 Specification for Structural Steel Buildings.
 
 Unbraced column lengths can vary between the weak and strong axes.
@@ -51,8 +51,8 @@ Analysis output includes the capacity as well as a listing of the controlling eq
 Output and input can be copied to the clipboard with a single button.
 
 
-Beam Code Check Features
-========================
+Beam Code Check
+===============
 Beam capacities can be provided using either the ASD or LRFD method of ANSI / AISC 360-10 Specification for Structural Steel Buildings.
 
 The unbraced flange length can be varied.
