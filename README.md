@@ -82,6 +82,4 @@ Website:
 
 http://structurx.com/
 
-Google Play:  
-
-https://play.google.com/store/apps/developer?id=STRUCTURX+LLC
+[Google Play](https://play.google.com/store/apps/developer?id=STRUCTURX+LLC)
