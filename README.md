@@ -3,7 +3,7 @@ I-Search
 
 Searchable I-Beam data for Android.
 
-This software is made available under the [GNU Public License version 3.0](http://www.gnu.org/licenses/gpl.txt).
+This software is made available under the [GNU Public License](http://www.gnu.org/licenses/gpl.txt).
 
 
 Support
