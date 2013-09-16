@@ -22,7 +22,9 @@ More Information
 To purchase this app, or other Structurx apps visit us on:
 
 Website:
+
 http://structurx.com/
 
 Google Play:  
+
 https://play.google.com/store/apps/developer?id=STRUCTURX+LLC
