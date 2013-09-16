@@ -7,10 +7,11 @@ This software is made available under the GNU Public License version 3.0:
 
 http://www.gnu.org/licenses/gpl.txt
 
+
 Support
 =======
 
-Want to support the development of this app?  Purchase a copy here:  
+Like this app and ant to support new features?  Purchase a copy here:  
 
 https://play.google.com/store/apps/developer?id=STRUCTURX+LLC
 
