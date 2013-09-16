@@ -17,7 +17,7 @@ Purchase a copy at [Google Play](https://play.google.com/store/apps/developer?id
 
 General
 =======
-If you do field measuring of steel I sections, you will love this app for Android phones. There is no doubt it will pay for itself the first time you use it! Simply type in a couple of criteria and press the search button - I Search will return all the steel I sections that match the search criteria. You can then peruse all the sections found and see matching properties for each. You can even have I Search determine a shape's column capacity or have it do a code check for a simple span beam.	
+If you do field measuring of steel I sections, you will love this app for Android phones. Simply type in a couple of criteria and press the search button - I Search will return all the steel I sections that match the search criteria. You can then peruse all the sections found and see matching properties for each. You can even have I Search determine a shape's column capacity or have it do a code check for a simple span beam.	
 
 Features
 ========
