@@ -12,6 +12,8 @@ Support
 Like this app and want to support new features?  
 
 Purchase a copy at [Google Play](https://play.google.com/store/apps/developer?id=STRUCTURX+LLC).
+[[Android app on Google Play]("https://developer.android.com/images/brand/en_app_rgb_wo_60.png")	](https://play.google.com/store/apps/developer?id=STRUCTURX+LLC")
+
 
 
 General
