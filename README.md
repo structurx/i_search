@@ -13,12 +13,13 @@ Like this app and want to support new features?
 
 Purchase a copy at [Google Play](https://play.google.com/store/apps/developer?id=STRUCTURX+LLC).
 
-Features
-========
+
+General
+=======
 If you do field measuring of steel I sections, you will love this app for Android phones. There is no doubt it will pay for itself the first time you use it! Simply type in a couple of criteria and press the search button - I Search will return all the steel I sections that match the search criteria. You can then peruse all the sections found and see matching properties for each. You can even have I Search determine a shape's column capacity or have it do a code check for a simple span beam.	
 
-General Features
-================
+Features
+========
 All fields are set to default to typical units used in the US system. For example, the section depth default unit is inches. This means you need only input the number 12 for a twelve inch section, but you can also input it using feet if you wish (see next bullet point).
 Dimension fields are "smart" fields allowing the user to input in feet, inches, or a mix of feet and inches. For example, to get 12.25 feet you could input 12.25', 147", 12'3, 12'-3", 12ft 3in, 147in, etc.
 To provide maximum flexibility, output can be copied to the clipboard so that you can paste it into a document, email, text message, etc. in order to record you field work.
