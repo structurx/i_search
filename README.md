@@ -20,36 +20,56 @@ If you do field measuring of steel I sections, you will love this app for Androi
 
 Features
 ========
-+All fields are set to default to typical units used in the US system. For example, the section depth default unit is inches. This means you need only input the number 12 for a twelve inch section, but you can also input it using feet if you wish (see next bullet point).
-+Dimension fields are "smart" fields allowing the user to input in feet, inches, or a mix of feet and inches. For example, to get 12.25 feet you could input 12.25', 147", 12'3, 12'-3", 12ft 3in, 147in, etc.
-+To provide maximum flexibility, output can be copied to the clipboard so that you can paste it into a document, email, text message, etc. in order to record you field work.
+All fields are set to default to typical units used in the US system. For example, the section depth default unit is inches. This means you need only input the number 12 for a twelve inch section, but you can also input it using feet if you wish (see next bullet point).
+
+Dimension fields are "smart" fields allowing the user to input in feet, inches, or a mix of feet and inches. For example, to get 12.25 feet you could input 12.25', 147", 12'3, 12'-3", 12ft 3in, 147in, etc.
+
+To provide maximum flexibility, output can be copied to the clipboard so that you can paste it into a document, email, text message, etc. in order to record you field work.
+
 
 Search Features
 ===============
-+Search criteria include the flange width, flange thickness, web thickness, section depth, and the approximate year of construction.
-+All search criteria have tolerances that can be set by the user.
-+Database includes current and historic I shapes back to 1873 for US rolling mills.
-+The search criteria and selected shape information can be copied to the clipboard with a single button.
+Search criteria include the flange width, flange thickness, web thickness, section depth, and the approximate year of construction.
+
+All search criteria have tolerances that can be set by the user.
+
+Database includes current and historic I shapes back to 1873 for US rolling mills.
+
+The search criteria and selected shape information can be copied to the clipboard with a single button.
+
 
 Column Analysis Features
 ========================
-+Column capacities can be provided using either the ASD or LRFD method of ANSI / AISC 360-10 Specification for Structural Steel Buildings.
-+Unbraced column lengths can vary between the weak and strong axes.
-+The yield strength of the steel can be varied.
-+Analysis output includes the capacity as well as a listing of the controlling equations and criteria.
-+Output and input can be copied to the clipboard with a single button.
+Column capacities can be provided using either the ASD or LRFD method of ANSI / AISC 360-10 Specification for Structural Steel Buildings.
+
+Unbraced column lengths can vary between the weak and strong axes.
+
+The yield strength of the steel can be varied.
+
+Analysis output includes the capacity as well as a listing of the controlling equations and criteria.
+
+Output and input can be copied to the clipboard with a single button.
+
 
 Beam Code Check Features
 ========================
-+Beam capacities can be provided using either the ASD or LRFD method of ANSI / AISC 360-10 Specification for Structural Steel Buildings.
-+The unbraced flange length can be varied.
-+The yield strength of the steel can be varied.
-+Deflection criteria can be set for live load and total load.
-+Deflection criteria can be an absolute value, a value based on span, or both.
-+Uniform line load can be typed directly or you can use the load calculator tool.
-+The load calculator tool takes a tributary width and applies it to both the dead load and live loads in pounds per square foot to get line load.
-+Code check output includes a listing of the controlling equations and criteria.
-+Output and input can be copied to the clipboard with a single button.
+Beam capacities can be provided using either the ASD or LRFD method of ANSI / AISC 360-10 Specification for Structural Steel Buildings.
+
+The unbraced flange length can be varied.
+
+The yield strength of the steel can be varied.
+
+Deflection criteria can be set for live load and total load.
+
+Deflection criteria can be an absolute value, a value based on span, or both.
+
+Uniform line load can be typed directly or you can use the load calculator tool.
+
+The load calculator tool takes a tributary width and applies it to both the dead load and live loads in pounds per square foot to get line load.
+
+Code check output includes a listing of the controlling equations and criteria.
+
+Output and input can be copied to the clipboard with a single button.
 
 
 
