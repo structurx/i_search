@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" >
+
+       <RelativeLayout
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           android:layout_width="294dp"
+           android:layout_height="200dp" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Live Load (psf) = "
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:text="Tributary Width = "
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/calc_live_load"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/calc_dead_load"
+        android:digits="0123456789"
+        android:selectAllOnFocus="true"
+        android:ems="10"
+        android:textSize="16dp"
+        android:maxLength="3"
+        android:singleLine="true" 
+        android:inputType="textNoSuggestions" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="Dead Load (psf) = "
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/calc_trib_width"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/calc_live_load"
+        android:layout_alignParentRight="true"
+        android:digits="@string/characters"
+        android:ems="10"
+        android:singleLine="true"
+        android:selectAllOnFocus="true"
+        android:layout_marginRight="5dp"
+        android:inputType="textNoSuggestions" />
+
+    <EditText
+        android:id="@+id/calc_dead_load"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:digits="0123456789"
+        android:selectAllOnFocus="true"
+        android:ems="10"
+        android:maxLength="3"
+        android:singleLine="true"
+        android:textSize="16dp"
+        android:inputType="textNoSuggestions" >
+
+        <requestFocus />
+    </EditText>
+    
+    </RelativeLayout>
+    
+</ScrollView>
+	

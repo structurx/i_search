@@ -1,0 +1,352 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/Container02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_alignRight="@+id/analyze"
+        android:layout_below="@+id/TextView01"
+        android:background="@drawable/layout_border" >
+        
+        <LinearLayout 
+            android:id="@+id/init"
+            android:focusable="true"
+			android:focusableInTouchMode="true" 
+			android:layout_width="0px"
+			android:layout_height="0px" >
+			    <requestFocus />
+		</LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/FrameLayout05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/FrameLayout04"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/TextView07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Total Load Limit = " />
+
+            <TextView
+                android:id="@+id/TextView08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Absolute = " />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/FrameLayout06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/FrameLayout04"
+            android:layout_alignTop="@+id/FrameLayout05" >
+
+            <EditText
+                android:id="@+id/total_abs"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/rounded_edittext"
+                android:digits="@string/characters"
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:imeOptions="actionNext"
+                android:maxLength="15"
+                android:nextFocusForward="@+id/dead_load"
+                android:paddingRight="4dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12sp"
+                android:inputType="text|textNoSuggestions" />
+
+            <EditText
+                android:id="@+id/total_limit"
+                android:layout_width="59dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/total_abs"
+                android:layout_toRightOf="@+id/TextView09"
+                android:background="@drawable/rounded_edittext"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:imeOptions="actionNext"
+                android:inputType="text|textNoSuggestions"
+                android:maxLength="4"
+                android:nextFocusForward="@+id/total_abs"
+                android:paddingRight="4dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/TextView09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Span  / " />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/FrameLayout03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/FrameLayout05"
+            android:layout_alignTop="@+id/FrameLayout04" >
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Live Load Limit = " />
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Absolute = " />
+        </FrameLayout>
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/grey" />
+
+        <RelativeLayout
+            android:id="@+id/FrameLayout04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/separator"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="14dp"
+            android:layout_marginRight="10dp" >
+
+            <EditText
+                android:id="@+id/live_abs"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/rounded_edittext"
+                android:digits="@string/characters"
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:imeOptions="actionNext"
+                android:maxLength="15"
+                android:nextFocusForward="@+id/total_limit"
+                android:paddingRight="4dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12sp"
+                android:inputType="text|textNoSuggestions" />
+
+            <EditText
+                android:id="@+id/live_limit"
+                android:layout_width="59dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/live_abs"
+                android:layout_toRightOf="@+id/textView1"
+                android:background="@drawable/rounded_edittext"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:imeOptions="actionNext"
+                android:inputType="text|textNoSuggestions"
+                android:maxLength="4"
+                android:nextFocusForward="@+id/live_abs"
+                android:paddingRight="4dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Span  / " />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/RelativeLayout01"
+        android:layout_below="@+id/Container02"
+        android:layout_marginTop="18dp"
+        android:text="Loads"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/clear"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/TextView02"
+        android:background="@drawable/layout_border" >
+
+        <FrameLayout
+            android:id="@+id/FrameLayout02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Dead Load (KLF) = " />
+
+            <TextView
+                android:id="@+id/TextView06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Live Load (KLF) = " />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/FrameLayout02"
+            android:layout_alignParentRight="true"
+            android:onClick="calculate_click"
+            android:text="Calculate Loads"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:width="80dp" />
+
+        <FrameLayout
+            android:id="@+id/FrameLayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/FrameLayout02" >
+
+            <EditText
+                android:id="@+id/live_load"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/rounded_edittext"
+                android:digits="0123456789."
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:imeOptions="actionDone"
+                android:maxLength="5"
+                android:paddingRight="4dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12sp"
+                android:inputType="text|textNoSuggestions" />
+
+            <EditText
+                android:id="@+id/dead_load"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/rounded_edittext"
+                android:digits="0123456789."
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:imeOptions="actionNext"
+                android:maxLength="5"
+                android:nextFocusForward="@+id/live_load"
+                android:paddingRight="4dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12sp"
+                android:inputType="text|textNoSuggestions" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/analyze"
+        android:layout_below="@+id/Container02"
+        android:text="0 = no limit"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Container02"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:text="Deflection Limits"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/analyze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="analyze_click"
+        android:text="Analyze"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:width="80dp" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/analyze"
+        android:layout_alignBottom="@+id/analyze"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="clear_click"
+        android:text="Clear"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:width="80dp" />
+
+</RelativeLayout>

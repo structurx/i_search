@@ -1,0 +1,270 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Options" >
+
+    <RelativeLayout
+        android:id="@+id/Container01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/default_tolerances"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/layout_border" >
+
+        <LinearLayout
+            android:id="@+id/init"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <requestFocus />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/FrameLayout2" >
+
+            <EditText
+                android:id="@+id/d_tolerance"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/rounded_edittext"
+                android:digits="@string/characters"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@id/bf_tolerance"
+                android:paddingLeft="4dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12sp"
+                android:inputType="text|textNoSuggestions" />
+
+            <EditText
+                android:id="@+id/bf_tolerance"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/rounded_edittext"
+                android:digits="@string/characters"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@id/tf_tolerance"
+                android:paddingLeft="4dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12sp"
+                android:inputType="text|textNoSuggestions" />
+
+            <EditText
+                android:id="@+id/tf_tolerance"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/rounded_edittext"
+                android:digits="@string/characters"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@id/tw_tolerance"
+                android:paddingLeft="4dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12sp"
+                android:inputType="text|textNoSuggestions" />
+
+            <EditText
+                android:id="@+id/tw_tolerance"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="120dp"
+                android:background="@drawable/rounded_edittext"
+                android:digits="@string/characters"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@id/year_tolerance"
+                android:paddingLeft="4dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12sp"
+                android:inputType="text|textNoSuggestions" />
+
+            <EditText
+                android:id="@+id/year_tolerance"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="160dp"
+                android:background="@drawable/rounded_edittext"
+                android:digits="0123456789"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:paddingLeft="4dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12sp"
+                android:inputType="text|textNoSuggestions" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/FrameLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/frameLayout1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="@string/d_e" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/bf_e" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:text="@string/tf_e" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:text="@string/tw_e" />
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="160dp"
+                android:text="@string/year_e" />
+        </FrameLayout>
+    </RelativeLayout>
+
+     <Button
+         android:id="@+id/save"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginBottom="15dp"
+         android:layout_marginRight="15dp"
+         android:background="@drawable/rounded_button"
+         android:onClick="save_click"
+         android:text="Save"
+         android:textColor="@color/black"
+         android:width="70dp" />
+
+     <Button
+         android:id="@+id/restore_defaults"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/Container01"
+         android:layout_alignRight="@+id/default_tolerances"
+         android:layout_alignTop="@+id/save"
+         android:background="@drawable/rounded_button"
+         android:text="Restore Defaults"
+         android:textColor="@color/black"
+         android:textSize="16dp"
+         android:width="70dp"
+         android:onClick="restore_defaults" />
+
+     <TextView
+         android:id="@+id/default_tolerances"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/Container01"
+         android:layout_alignParentTop="true"
+         android:text="Tolerances  \u00B1"
+         android:textColorHint="@color/white"
+         android:textSize="18dp" />
+
+     <RelativeLayout
+         android:id="@+id/RelativeLayout01"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/Container01"
+         android:layout_alignRight="@+id/Container01"
+         android:layout_below="@+id/Container01"
+         android:layout_marginTop="26dp"
+         android:background="@drawable/layout_border" >
+
+         <FrameLayout
+             android:id="@+id/FrameLayout02"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="5dp"
+             android:layout_marginRight="5dp" >
+
+             <TextView
+                 android:id="@+id/TextView05"
+                 android:layout_width="86dp"
+                 android:layout_height="wrap_content"
+                 android:text="AISC 14th Edition Method:" />
+         </FrameLayout>
+
+         <RadioGroup
+             android:id="@+id/code"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true" >
+
+             <RadioButton
+                 android:id="@+id/asd"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:checked="true"
+                 android:onClick="button_click"
+                 android:text="ASD"
+                 android:textColor="@color/white" />
+
+             <RadioButton
+                 android:id="@+id/lrfd"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:onClick="button_click"
+                 android:text="LRFD"
+                 android:textColor="@color/white" />
+         </RadioGroup>
+
+     </RelativeLayout>
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/RelativeLayout01"
+         android:layout_below="@+id/Container01"
+         android:paddingTop="5dp"
+         android:text="Analysis/Design"
+         android:textSize="18dp" />
+     
+</RelativeLayout>

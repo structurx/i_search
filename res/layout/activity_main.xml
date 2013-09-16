@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="157dp"
+        android:layout_height="260dp"
+        android:layout_above="@+id/search"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="45dp"
+        android:layout_marginTop="45dp" >
+
+        <LinearLayout
+            android:id="@+id/init"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <requestFocus />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/picture_border"
+            android:contentDescription="W Beam"
+            android:src="@drawable/shape" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/weighted1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.64" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.36"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/bf"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/selected_edittext_dark"
+                    android:digits="@string/characters"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/bf"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textNoSuggestions"
+                    android:maxLength="15"
+                    android:nextFocusForward="@+id/d"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/bf_tolerance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="bf_tolerance"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/weighted4"
+                android:layout_width="fill_parent"
+                android:layout_height="68dp"
+                android:layout_weight="0.42" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.58"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/tw"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:digits="@string/characters"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/tw"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textNoSuggestions"
+                    android:maxLength="15"
+                    android:nextFocusForward="@+id/year"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tw_tolerance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="tw_tolerance"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_above="@+id/linearLayout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="38dp" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.25"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/d"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"                    
+                    android:background="@drawable/rounded_edittext"
+                    android:digits="@string/characters"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/d"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textNoSuggestions"
+                    android:maxLength="15"
+                    android:nextFocusForward="@+id/tf"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/d_tolerance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="d_tolerance"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.25" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout02"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.25"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/tf"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:digits="@string/characters"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/tf"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textNoSuggestions"
+                    android:maxLength="15"
+                    android:nextFocusForward="@+id/tw"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tf_tolerance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="tf_tolerance"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="5dp"
+                android:text="Search Criteria"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/year"
+                android:layout_width="98dp"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/year_tolerance"
+                android:layout_alignBottom="@+id/year_tolerance"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/textView1"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:digits="1234567890"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/year"
+                android:imeOptions="actionDone"
+                android:maxLength="4"
+                android:nextFocusForward="@+id/search"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12sp"
+                android:inputType="text|textNoSuggestions" />
+
+            <TextView
+                android:id="@+id/year_tolerance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/search"
+                android:layout_toRightOf="@+id/year"
+                android:layout_marginLeft="10dp"
+                android:text="year_tolerance"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rounded_button"
+                android:onClick="search_click"
+                android:text="Search"
+                android:textColor="@color/black"
+                android:width="80dp" />
+    
+</RelativeLayout>

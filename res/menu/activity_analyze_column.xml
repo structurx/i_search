@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_home"
+        android:onClick="home_click"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Home"/>
+    <item
+        android:id="@+id/menu_options"
+        android:onClick="options_click"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Options"/>
+    
+    <item
+        android:id="@+id/menu_help"
+        android:onClick="help_click"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Help"/>       
+    
+    <item
+        android:id="@+id/menu_about"
+        android:onClick="about_click"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="About"/> 
+
+
+</menu>

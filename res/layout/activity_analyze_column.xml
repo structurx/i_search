@@ -1,0 +1,274 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+	    
+    <LinearLayout 
+        	android:id="@+id/init"
+        	android:focusable="true"
+			android:focusableInTouchMode="true" 
+			android:layout_width="0px"
+			android:layout_height="0px" >
+			    <requestFocus />
+	</LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/Container02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_alignRight="@+id/Container01"
+        android:layout_below="@+id/TextView01"
+        android:background="@drawable/layout_border" >
+
+        <FrameLayout
+            android:id="@+id/FrameLayout04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <EditText
+                android:id="@+id/weak_axis"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/rounded_edittext"
+                android:digits="@string/characters"
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:imeOptions="actionNext"
+                android:maxLength="15"
+                android:nextFocusForward="@+id/strong_axis"
+                android:paddingRight="4dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12sp"
+                android:inputType="text|textNoSuggestions" />
+
+            <EditText
+                android:id="@+id/strong_axis"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/rounded_edittext"
+                android:digits="@string/characters"
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:imeOptions="actionNext"
+                android:maxLength="15"
+                android:nextFocusForward="@+id/yield_strength"
+                android:paddingRight="4dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12sp"
+                android:inputType="text|textNoSuggestions" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/FrameLayout03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="@string/weak_axis" />
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/strong_axis" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Container01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/clear"
+        android:layout_alignRight="@+id/analyze"
+        android:layout_below="@+id/textView1"
+        android:background="@drawable/layout_border" >
+
+        <FrameLayout
+            android:id="@+id/FrameLayout02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/textView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="@string/column_height" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/FrameLayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/FrameLayout02" >
+
+            <EditText
+                android:id="@+id/column_height"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/rounded_edittext"
+                android:digits="@string/characters"
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:imeOptions="actionNext"
+                android:maxLength="15"
+                android:nextFocusForward="@+id/weak_axis"
+                android:paddingRight="4dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12sp"
+                android:inputType="text|textNoSuggestions" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/RelativeLayout01"
+        android:layout_below="@+id/textView2"
+        android:text="@string/material_properties"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Container02"
+        android:layout_below="@+id/Container02"
+        android:text="@string/fully_braced"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Container01"
+        android:layout_below="@+id/Container01"
+        android:layout_marginTop="14dp"
+        android:text="@string/unbraced"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Container02"
+        android:layout_alignRight="@+id/analyze"
+        android:layout_below="@+id/textView3"
+        android:background="@drawable/layout_border" >
+
+        <FrameLayout
+            android:id="@+id/FrameLayout05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <EditText
+                android:id="@+id/yield_strength"
+                android:layout_width="95dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rounded_edittext"
+                android:digits="@string/characters"
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:imeOptions="actionDone"
+                android:maxLength="15"
+                android:paddingRight="4dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12sp"
+                android:inputType="text|textNoSuggestions" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/FrameLayout06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="@string/yield_strength" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Container01"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:text="Height"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/analyze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="21dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="analyze_click"
+        android:text="Analyze"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:width="80dp" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/analyze"
+        android:layout_alignBottom="@+id/analyze"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="31dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="clear_click"
+        android:text="Clear"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:width="80dp" />
+
+</RelativeLayout>
