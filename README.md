@@ -21,4 +21,5 @@ More Information
 
 Visit our website here:  http://structurx.com/
 
-To purchase this app or other Structurx apps visit us on Google Play:  https://play.google.com/store/apps/developer?id=STRUCTURX+LLC
+To purchase this app or other Structurx apps visit us on Google Play:  
+https://play.google.com/store/apps/developer?id=STRUCTURX+LLC
