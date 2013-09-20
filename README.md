@@ -91,7 +91,7 @@ Contact
 
 Structurx, LLC; Kip Ping
 
-Email: jkp@pinneng.com
+Email: support@structurx.com
 
 Phone: 513-984-1663
 
