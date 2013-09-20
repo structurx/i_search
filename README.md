@@ -84,3 +84,12 @@ Website:
 http://structurx.com/
 
 [Google Play](https://play.google.com/store/apps/developer?id=STRUCTURX+LLC)
+
+
+Contact
+=======
+
+Structurx, LLC; Kip Ping
+Email: jkp@pinneng.com
+Phone: 513-984-1663
+App name: I-Search
