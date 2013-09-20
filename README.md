@@ -90,6 +90,9 @@ Contact
 =======
 
 Structurx, LLC; Kip Ping
+
 Email: jkp@pinneng.com
+
 Phone: 513-984-1663
+
 App name: I-Search
