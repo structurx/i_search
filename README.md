@@ -1,7 +1,9 @@
 I-Search
 ========
 
-Searchable I-Beam data for Android.  Available on [Google Play](https://play.google.com/store/apps/developer?id=STRUCTURX+LLC).
+Searchable I-Beam data for Android.  
+
+Download at [Google Play](https://play.google.com/store/apps/developer?id=STRUCTURX+LLC).
 
 License
 ========
